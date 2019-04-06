@@ -13,6 +13,7 @@ class App extends React.Component {
   render() {
     return (
       <Page>
+        <div>Hello world</div>
         <Section title="Enter your details">
           <DetailsForm />
         </Section>
