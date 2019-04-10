@@ -22,7 +22,7 @@ describe('test Input component', () => {
   });
 
   it('should render correct label', () => {
-    expect(wrapper.find('label').text()).toEqual('name1');
+    expect(wrapper.find('label').text()).toEqual('name');
   });
 
   it('should receive correct props', () => {
