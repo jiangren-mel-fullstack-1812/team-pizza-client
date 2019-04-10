@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Container = styled.div`
   flex-grow: 1;
@@ -82,3 +83,19 @@ export default class Input extends React.Component {
     );
   }
 }
+
+Input.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  label: PropTypes.string,
+  value: PropTypes.string,
+  validate: PropTypes.bool,
+  validationMessage: PropTypes.string.isRequired,
+  formDirty: PropTypes.bool,
+};
+
+Input.defaultProps = {
+  label: undefined,
+  value: '',
+  validate: false,
+  formDirty: false,
+};

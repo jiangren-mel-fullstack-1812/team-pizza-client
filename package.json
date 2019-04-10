@@ -12,7 +12,8 @@
     "prebuild": "npm run test",
     "build": "webpack --mode production",
     "test": "./node_modules/.bin/jest",
-    "lint": "eslint src/**/*.js"
+    "pretest": "npm run lint",
+    "lint": "eslint src/**/*.jsx"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
   },
   "dependencies": {
     "express": "^4.16.4",
+    "prop-types": "^15.7.2",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
     "serve": "^10.1.2",
